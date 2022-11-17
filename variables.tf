@@ -25,3 +25,8 @@ variable "user_ocid" {
 variable "tenancy_ocid" {
   type=string
 }
+
+variable "key_name" {
+  type = string
+  description = "(optional) describe your variable"
+}

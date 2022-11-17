@@ -7,4 +7,5 @@ module "example" {
   vault_type = var.vault_type
   tenancy_ocid=var.tenancy_ocid
   user_ocid=var.user_ocid
+  key_name = var.key_name
 }

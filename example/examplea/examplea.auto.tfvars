@@ -1,2 +1,1 @@
-common_tags = {
-"createby" = "Terraform" }
+key_name="james"
