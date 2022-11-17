@@ -21,7 +21,7 @@ This is a very basic example.
 
 ![alt text](./diagram/message_queue.png)
 
-Include **module.activemq.tf** this repository as a module in your existing Terraform code:
+Include **module.kms.tf** this repository as a module in your existing Terraform code:
 
 ```terraform
 module "kms" {
