@@ -24,16 +24,9 @@ This is a very basic example.
 Include **module.activemq.tf** this repository as a module in your existing Terraform code:
 
 ```terraform
-module "activemq" {
-  source      = "JamesWoolfenden/activemq/aws"
-  version     = "v0.1.1"
-  common_tags = var.common_tags
-  subnet_ids  = [element(tolist(data.aws_subnet_ids.private.ids), 0)]
-  vpc_id      = element(tolist(data.aws_vpcs.main.ids), 0)
-  mq_broker   = var.mq_broker
-  my_config   = var.my_config
-  username    = "NotAdmin"
-  password    = random_password.password.result
+module "kms" {
+  source      = "JamesWoolfenden/kms/oci"
+  version     = "v0.0.1"
 }
 ```
 
@@ -107,7 +100,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-oci-
 
 ## Copyrights
 
-Copyright © 2019-2021 James Woolfenden
+Copyright © 2022 James Woolfenden
 
 ## License
 
@@ -138,11 +131,4 @@ under the License.
 
 [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
 [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
-[github]: https://github.com/jameswoolfenden
-[linkedin]: https://www.linkedin.com/in/jameswoolfenden/
-[twitter]: https://twitter.com/JimWoolfenden
-[share_twitter]: https://twitter.com/intent/tweet/?text=terraform-oci-kms&url=https://github.com/JamesWoolfenden/terraform-oci-kms
-[share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-oci-kms&url=https://github.com/JamesWoolfenden/terraform-oci-kms
-[share_reddit]: https://reddit.com/submit/?url=https://github.com/JamesWoolfenden/terraform-oci-kms
-[share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/JamesWoolfenden/terraform-oci-kms
-[share_email]: mailto:?subject=terraform-oci-kms&body=https://github.com/JamesWoolfenden/terraform-oci-kms
+
