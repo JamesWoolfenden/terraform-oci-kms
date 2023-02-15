@@ -1,6 +1,6 @@
 # terraform-oci-kms
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-oci-kms/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-oci-kms)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-oci-kms/workflows/Verify/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-oci-kms)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-oci-kms.svg)](https://github.com/JamesWoolfenden/terraform-oci-kms/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-oci-kms.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-oci-kms/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
