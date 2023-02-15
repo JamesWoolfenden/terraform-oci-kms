@@ -33,13 +33,16 @@ module "kms" {
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >=1.3.0 |
+| <a name="requirement_oci"></a> [oci](#requirement\_oci) | 4.108.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| <a name="provider_oci"></a> [oci](#provider\_oci) | 4.108.0 |
 
 ## Modules
 
@@ -49,35 +52,28 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [aws_mq_broker.broker](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/mq_broker) | resource |
-| [aws_mq_configuration.broker](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/mq_configuration) | resource |
-| [aws_security_group.broker](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
+| [oci_identity_compartment.tf-compartment](https://registry.terraform.io/providers/oracle/oci/4.108.0/docs/resources/identity_compartment) | resource |
+| [oci_kms_key.pike](https://registry.terraform.io/providers/oracle/oci/4.108.0/docs/resources/kms_key) | resource |
+| [oci_kms_vault.pike](https://registry.terraform.io/providers/oracle/oci/4.108.0/docs/resources/kms_vault) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_audit"></a> [audit](#input\_audit) | To enable audit logging | `bool` | `"false"` | no |
-| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
-| <a name="input_ingress"></a> [ingress](#input\_ingress) | n/a | `list(any)` | n/a | yes |
-| <a name="input_logging"></a> [logging](#input\_logging) | To enable Logging to Cloudwatch | `bool` | `true` | no |
-| <a name="input_maintenance_window_start_time"></a> [maintenance\_window\_start\_time](#input\_maintenance\_window\_start\_time) | Describe the Maintenance window block | `map(any)` | <pre>{<br>  "day_of_week": "MONDAY",<br>  "time_of_day": "12:05",<br>  "time_zone": "GMT"<br>}</pre> | no |
-| <a name="input_mq_broker"></a> [mq\_broker](#input\_mq\_broker) | MQ broker details | `map(any)` | n/a | yes |
-| <a name="input_my_config"></a> [my\_config](#input\_my\_config) | MQ Config | `map(any)` | n/a | yes |
-| <a name="input_password"></a> [password](#input\_password) | n/a | `string` | n/a | yes |
-| <a name="input_security_group_name"></a> [security\_group\_name](#input\_security\_group\_name) | Broker Security group name | `string` | `"Broker"` | no |
-| <a name="input_subnet_ids"></a> [subnet\_ids](#input\_subnet\_ids) | Contains subnet ids | `list(any)` | n/a | yes |
-| <a name="input_username"></a> [username](#input\_username) | n/a | `string` | `"ExampleUser"` | no |
-| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | The VPC id | `string` | n/a | yes |
+| <a name="input_compartment_id"></a> [compartment\_id](#input\_compartment\_id) | n/a | `string` | n/a | yes |
+| <a name="input_defined_tags"></a> [defined\_tags](#input\_defined\_tags) | n/a | `map` | n/a | yes |
+| <a name="input_freeform_tags"></a> [freeform\_tags](#input\_freeform\_tags) | n/a | `map` | n/a | yes |
+| <a name="input_key_name"></a> [key\_name](#input\_key\_name) | (optional) describe your variable | `string` | n/a | yes |
+| <a name="input_tenancy_ocid"></a> [tenancy\_ocid](#input\_tenancy\_ocid) | n/a | `string` | n/a | yes |
+| <a name="input_user_ocid"></a> [user\_ocid](#input\_user\_ocid) | n/a | `string` | n/a | yes |
+| <a name="input_vault_display_name"></a> [vault\_display\_name](#input\_vault\_display\_name) | n/a | `string` | n/a | yes |
+| <a name="input_vault_type"></a> [vault\_type](#input\_vault\_type) | n/a | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_broker"></a> [broker](#output\_broker) | The Broker details |
-| <a name="output_configuration"></a> [configuration](#output\_configuration) | The broker configuration |
-| <a name="output_mq_password"></a> [mq\_password](#output\_mq\_password) | MQ password |
-| <a name="output_mq_username"></a> [mq\_username](#output\_mq\_username) | MQ Username |
+| <a name="output_vault"></a> [vault](#output\_vault) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
@@ -131,4 +127,3 @@ under the License.
 
 [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
 [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
-

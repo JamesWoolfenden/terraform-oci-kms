@@ -1,3 +1,3 @@
 output "module" {
-    value=module.example
+  value = module.kms
 }
