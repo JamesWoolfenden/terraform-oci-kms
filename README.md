@@ -18,9 +18,6 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 ## Usage
 
 This is a very basic example.
-
-![alt text](./diagram/message_queue.png)
-
 Include **module.kms.tf** this repository as a module in your existing Terraform code:
 
 ```terraform
@@ -96,7 +93,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-oci-
 
 ## Copyrights
 
-Copyright © 2022 James Woolfenden
+Copyright © 2022-3 James Woolfenden
 
 ## License
 
