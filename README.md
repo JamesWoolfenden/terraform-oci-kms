@@ -61,8 +61,8 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_compartment_id"></a> [compartment\_id](#input\_compartment\_id) | n/a | `string` | n/a | yes |
-| <a name="input_defined_tags"></a> [defined\_tags](#input\_defined\_tags) | n/a | `map` | n/a | yes |
-| <a name="input_freeform_tags"></a> [freeform\_tags](#input\_freeform\_tags) | n/a | `map` | n/a | yes |
+| <a name="input_defined_tags"></a> [defined\_tags](#input\_defined\_tags) | n/a | `map(any)` | n/a | yes |
+| <a name="input_freeform_tags"></a> [freeform\_tags](#input\_freeform\_tags) | n/a | `map(any)` | n/a | yes |
 | <a name="input_key_name"></a> [key\_name](#input\_key\_name) | (optional) describe your variable | `string` | n/a | yes |
 | <a name="input_tenancy_ocid"></a> [tenancy\_ocid](#input\_tenancy\_ocid) | n/a | `string` | n/a | yes |
 | <a name="input_user_ocid"></a> [user\_ocid](#input\_user\_ocid) | n/a | `string` | n/a | yes |

@@ -1,3 +1,3 @@
 output "vault" {
-  value=oci_kms_vault.pike
+  value = oci_kms_vault.pike
 }
